@@ -1,0 +1,117 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 62,5%;
+}
+
+body {
+  font-weight: 600;
+  line-height: 1.6;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: min-content 80vh (50vw)[3] (min-content)[3];
+      grid-template-rows: -webkit-min-content 80vh repeat(3, 50vw) repeat(3, -webkit-min-content);
+      grid-template-rows: min-content 80vh repeat(3, 50vw) repeat(3, min-content);
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+}
+
+.navbar {
+  background-color: #fe7867;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1 / 13;
+}
+
+.header {
+  background-color: #fad400;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1 / 13;
+}
+
+.story__pictures {
+  background-color: #818498;
+}
+
+.story__pictures-1 {
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 6;
+  grid-column: 7 / 13;
+}
+
+.story__pictures-2 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-column: 1 / 7;
+}
+
+.story__content {
+  background-color: #23303e;
+}
+
+.story__content-1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-column: 1 / 7;
+  -ms-grid-row: 3;
+  grid-row: 3;
+}
+
+.story__content-2 {
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 6;
+  grid-column: 7 / 13;
+}
+
+.story__second-graphic {
+  background-color: #25564b;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 6;
+  grid-column: 1 / 7;
+}
+
+.story__second-photo {
+  background-color: #19536b;
+  -ms-grid-column: 7;
+  -ms-grid-column-span: 6;
+  grid-column: 7 / 13;
+}
+
+.testimonials {
+  background-color: #a7abae;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1 / 13;
+}
+
+.gallery {
+  background-color: #fe7867;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1 / 13;
+}
+
+.footer {
+  background-color: #458c7e;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1 / 13;
+}
+/*# sourceMappingURL=main.css.map */

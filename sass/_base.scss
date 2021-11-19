@@ -1,0 +1,49 @@
+// COLOR VARIABLES
+$primary-red: hsl(7, 99%, 70%);
+$primary-yellow: hsl(51, 100%, 49%);
+$primary-graph-text: hsl(167, 40%, 24%);
+$primary-photo-text: hsl(198, 62%, 26%);
+$primary-footer: hsl(168, 34%, 41%);
+
+$secondary-vdark-blue: hsl(212, 27%, 19%);
+$secondary-vdark-grayblue: hsl(213, 9%, 39%);
+$secondary-dark-greyblue: hsl(232, 10%, 55%);
+$secondary-grayblue: hsl(210, 4%, 67%);
+
+$white: hsl(0, 0%, 100%);
+
+// FONT VARIABLES
+$font-primary: 'Barlow', sans-serif;
+$font-secondary: 'Fraunces', serif;
+
+// GLOBAL
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    box-sizing: border-box;
+    font-size: 62,5%;
+}
+
+body {
+    font-weight: 600;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+}
+
+.container {
+    // width: 100%;
+    // max-width: 1440px;
+    // margin: 0 auto;
+    display: grid;
+    grid-template-rows: min-content 80vh repeat(3, 50vw) repeat(3, min-content);
+    grid-template-columns: repeat(12, 1fr);
+}
