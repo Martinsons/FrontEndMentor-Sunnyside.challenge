@@ -25,9 +25,9 @@ img {
 .container {
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: min-content 80vh (50vw)[3] (min-content)[3];
-      grid-template-rows: -webkit-min-content 80vh repeat(3, 50vw) repeat(3, -webkit-min-content);
-      grid-template-rows: min-content 80vh repeat(3, 50vw) repeat(3, min-content);
+  -ms-grid-rows: min-content 80vh (minmax(30rem, 1fr))[3] (min-content)[3];
+      grid-template-rows: -webkit-min-content 80vh repeat(3, minmax(30rem, 1fr)) repeat(3, -webkit-min-content);
+      grid-template-rows: min-content 80vh repeat(3, minmax(30rem, 1fr)) repeat(3, min-content);
   -ms-grid-columns: (1fr)[12];
       grid-template-columns: repeat(12, 1fr);
 }
