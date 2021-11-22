@@ -1,4 +1,138 @@
 .header {
-    background-color: $primary-yellow;
-    
+    height: 80vh;
+    background-image: url("/img/mobile/image-header.jpg");
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    grid-template-rows: min-content repeat(8, 1fr);
+
+
+    &__navbar {
+        display: flex;
+        justify-content: space-between;
+        padding: 2rem;
+    }
+
+    &__heading {
+        text-transform: uppercase;
+        font-family: $font-secondary;
+        color: $white;
+        font-size: 2.5rem;
+        letter-spacing: 5px;
+        text-align: center;
+        grid-row: 3 / 5;
+        align-self: center;
+        font-weight: 900;
+    }
+
+    &__icon {
+        width: 45px;
+        grid-row: 5 / 8;
+        justify-self: center;
+        align-self: center;
+    }
+}
+
+.nav {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+
+    &__logo {
+        width: 130px;
+    }
+
+    &__links {
+        display: none;
+    }
+
+    &__link {
+        text-decoration: none;
+        color: $white;
+        font-family: $font-primary;
+        padding: 0 2rem;
+    }
+
+    &__link:last-child {
+        padding-right: 0;
+    }
+}
+
+
+// MEDIA QUERIES
+
+@media screen and (min-width: 500px) {
+    .header {
+        &__heading {
+            padding: 0 4rem;
+        }
+    }
+}
+
+@media screen and (min-width: 650px) {
+    .header {
+
+        &__heading {
+            grid-row: 4 / 5;
+        }
+
+        &__icon {
+            width: 55px;
+            grid-row: 6 / 8;
+            
+        }
+    }
+}
+
+@media screen and (min-width: 800px){
+
+    .header {
+        background-image: url("/img/desktop/image-header.jpg");
+
+        &__heading {
+            grid-row: 3 / 4;
+        }
+
+        &__icon {
+            align-self: start;
+            grid-row: 5 / 7;
+            width: 40px;
+        }
+    }
+
+    .nav {
+        &__links {
+            display: block;
+        }
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .nav {
+        &__links {
+            font-size: 1.25rem;
+        }
+    }
+}
+
+@media screen and (min-width: 1400px) {
+
+    .header {
+        &__navbar {
+            padding: 3rem 8rem;
+        }
+    }
+
+    .nav {
+
+        &__link {
+            padding: 0 4rem;
+        }
+
+        &__links {
+            font-size: 1.25rem;
+        }
+    }
 }
